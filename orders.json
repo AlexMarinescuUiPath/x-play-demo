@@ -1,12 +1,13 @@
 {
-  "generatedAt": "2026-09-07T12:00:00Z",
-  "currency": "EUR",
-  "orders": [
-    { "orderId": "ORD-1001", "customer": "Acme GmbH",         "amountCents": 125000, "status": "paid" },
-    { "orderId": "ORD-1002", "customer": "Acme GmbH",         "amountCents": 48050,  "status": "paid" },
-    { "orderId": "ORD-1003", "customer": "Northwind Traders", "amountCents": 990000, "status": "paid" },
-    { "orderId": "ORD-1004", "customer": "Contoso Ltd",       "amountCents": 15999,  "status": "pending" },
-    { "orderId": "ORD-1005", "customer": "Northwind Traders", "amountCents": 250000, "status": "paid" },
-    { "orderId": "ORD-1006", "customer": "Fabrikam Inc",      "amountCents": 72500,  "status": "paid" }
-  ]
+  "meta": { "generatedAt": "2026-09-07T15:00:00Z", "currency": "EUR", "schemaVersion": 2 },
+  "data": {
+    "orders": [
+      { "id": "ORD-1001", "customer": { "id": "C-01", "name": "Acme GmbH" },         "amount": "1250.00", "status": "PAID" },
+      { "id": "ORD-1002", "customer": { "id": "C-01", "name": "Acme GmbH" },         "amount": "480.50",  "status": "PAID" },
+      { "id": "ORD-1003", "customer": { "id": "C-02", "name": "Northwind Traders" }, "amount": "9900.00", "status": "PAID" },
+      { "id": "ORD-1004", "customer": { "id": "C-03", "name": "Contoso Ltd" },       "amount": "159.99",  "status": "PENDING" },
+      { "id": "ORD-1005", "customer": { "id": "C-02", "name": "Northwind Traders" }, "amount": "2500.00", "status": "PAID" },
+      { "id": "ORD-1006", "customer": { "id": "C-04", "name": "Fabrikam Inc" },      "amount": "725.00",  "status": "PAID" }
+    ]
+  }
 }
